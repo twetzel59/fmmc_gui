@@ -1,13 +1,17 @@
+//! This module contains a clickable button.
+
 use sfml::graphics::{Color, RectangleShape, RenderTarget, Shape, Transformable};
 use sfml::system::Vector2f;
 use super::{SignalManager, Widget, WidgetExt};
 
+/// A plain old clickable button.
 pub struct Button<'s> {
     rect: RectangleShape<'s>,
     signals: SignalManager,
 }
 
 impl<'s> Button<'s> {
+    /// Create a new button.
     pub fn new() -> Button<'s> {
         let mut rect = RectangleShape::with_size(Vector2f::new(100., 50.));
         rect.set_position((100., 75.));
