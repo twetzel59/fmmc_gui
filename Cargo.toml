@@ -1,0 +1,16 @@
+[package]
+name = "fmmc_gui"
+version = "0.1.0"
+authors = ["twetzel59 <twetzel59@gmail.com>"]
+
+[lib]
+name = "fmmc_gui"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fmmc_gui"
+path = "src/main.rs"
+doc = false
+
+[dependencies]
+sfml = "0.14.0"
